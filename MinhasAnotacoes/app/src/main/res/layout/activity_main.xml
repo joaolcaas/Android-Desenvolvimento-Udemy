@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="minhasanotacoes.cursoandroid.com.minhasanotacoes.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/textoEditavelId"
+            android:layout_width="320dp"
+            android:layout_height="360dp"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_below="@+id/imageView"
+            android:background="@drawable/fundo_anotacao"
+            android:ems="10"
+            android:gravity="start"
+            android:inputType="textPersonName"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/imagemSalvarId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textoEditavelId"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/botao_salvar" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
